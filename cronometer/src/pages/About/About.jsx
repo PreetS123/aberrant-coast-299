@@ -1,8 +1,11 @@
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import Navbar from "../../components/header/Navbar";
 
 export const About = () => {
   return (
+    <>
+     <Navbar/>
     <Box 
     p={"2%"} 
     w="90%" 
@@ -25,7 +28,7 @@ export const About = () => {
           </Text>
           <Heading 
           color="#4f4e53" 
-          fontSize={{base:'1.8em',md:'2.4em',lg:"2.74em" }}
+          fontSize={{base:'1em',md:'2.4em',lg:"2.74em" }}
           lineHeight="1.3em"
           fontWeight={600}
           >
@@ -143,5 +146,6 @@ export const About = () => {
         </Box>
       </Box>
     </Box>
+    </>
   );
 };
