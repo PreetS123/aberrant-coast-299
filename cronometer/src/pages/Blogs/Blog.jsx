@@ -16,10 +16,12 @@ import { Community } from "./comp/Community";
 import { NewArr } from "./comp/NewArr";
 import { Popular } from "./comp/Popular";
 import { FirstBox1 } from "./comp/FirstBox";
+import Navbar from "../../components/header/Navbar";
 
 export const Blog = () => {
   return (
     <Box>
+      <Navbar/>
       <Box mt={10}>
         <FirstBox />
       </Box>
