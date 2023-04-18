@@ -27,6 +27,8 @@ import { useNavigate } from "react-router-dom";
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
   const navigate = useNavigate();
+   let token = localStorage.getItem("token");
+  console.log(token, "token");
 
   const GotoReg = () => {
     navigate("/signup");

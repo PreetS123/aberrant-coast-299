@@ -10,7 +10,6 @@ import {
   InputGroup,
   InputLeftElement,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 import React from "react";
 import { SupNav } from "./Comp/SupNav";
@@ -18,7 +17,7 @@ import { SupNav } from "./Comp/SupNav";
 export const Support = () => {
   return (
     <Box>
-      {/* <SupNav /> */}
+      <SupNav />
       <Flex
         mb="40px"
         justify="center"
@@ -115,69 +114,110 @@ export const Support = () => {
         </Grid>
       </Box>
 
-       <Divider w={'80%'} m='auto' border={'2px solid'} />
-      <Box justify={"center"} align="center" p={2} w='80%' 
-      m={{base:'30px auto',sm:'30px auto', md:'30px auto',lg:'30px auto'}} 
-      >
+      <Divider
+        w={"80%"}
+        margin={{ base: "130px auto", md: "30px auto", lg: "30px auto" }}
+        border={"2px solid"}
+      />
+      <Box justify={"center"} align="center" p={2} w="80%" margin={"30px auto"}>
         <Text fontSize={25} color="gray.700">
           Recent activity
         </Text>
-        <Flex direction='column'  justify='center' align='center' p={4} >
-          <Flex w={'90%'} p="10px 20px" justify="space-between" m='10px 0px' borderBottom={'1px solid gray'}>
-            <Flex direction='column' textAlign={'left'} >
-              <Text  >Pro Account Setting</Text>
-              <Text  fontSize={12} color='#ff763f'>Pro-HIPPA</Text>
+        <Flex direction="column" justify="center" align="center" p={4}>
+          <Flex
+            w={"90%"}
+            p="10px 20px"
+            justify="space-between"
+            m="10px 0px"
+            borderBottom={"1px solid gray"}
+          >
+            <Flex direction="column" textAlign={"left"}>
+              <Text>Pro Account Setting</Text>
+              <Text fontSize={12} color="#ff763f">
+                Pro-HIPPA
+              </Text>
             </Flex>
             <HStack>
               <Text>Artical Created 2 days ago</Text>
-              <ChatIcon color='#ff763f'/>
-            </HStack>
-          </Flex>
-             
-          <Flex w={'90%'} p="10px 20px" justify="space-between" m='10px 0px' borderBottom={'1px solid gray'}>
-            <Flex direction='column' textAlign={'left'}>
-              <Text >Clients</Text>
-              <Text  fontSize={12} color='#ff763f'>Pro-messaging</Text>
-            </Flex>
-            <HStack>
-              <Text>Artical Created 7 months ago</Text>
-              <ChatIcon color='#ff763f' />
+              <ChatIcon color="#ff763f" />
             </HStack>
           </Flex>
 
-          <Flex w={'90%'} p="10px 20px" justify="space-between" m='10px 0px' borderBottom={'1px solid gray'}>
-            <Flex direction='column' textAlign={'left'}>
-              <Text >Widgets</Text>
-              <Text fontSize={12} color='#ff763f'>Android Home Screen Widgets</Text>
+          <Flex
+            w={"90%"}
+            p="10px 20px"
+            justify="space-between"
+            m="10px 0px"
+            borderBottom={"1px solid gray"}
+          >
+            <Flex direction="column" textAlign={"left"}>
+              <Text>Clients</Text>
+              <Text fontSize={12} color="#ff763f">
+                Pro-messaging
+              </Text>
             </Flex>
             <HStack>
               <Text>Artical Created 7 months ago</Text>
-              <ChatIcon color='#ff763f' />
+              <ChatIcon color="#ff763f" />
             </HStack>
           </Flex>
 
-          <Flex w={'90%'} p="10px 20px" justify="space-between" m='10px 0px' borderBottom={'1px solid gray'}>
-            <Flex direction='column' textAlign={'left'}>
-              <Text >Foods Tabs</Text>
-              <Text  fontSize={12} color='#ff763f'>Food</Text>
+          <Flex
+            w={"90%"}
+            p="10px 20px"
+            justify="space-between"
+            m="10px 0px"
+            borderBottom={"1px solid gray"}
+          >
+            <Flex direction="column" textAlign={"left"}>
+              <Text>Widgets</Text>
+              <Text fontSize={12} color="#ff763f">
+                Android Home Screen Widgets
+              </Text>
+            </Flex>
+            <HStack>
+              <Text>Artical Created 7 months ago</Text>
+              <ChatIcon color="#ff763f" />
+            </HStack>
+          </Flex>
+
+          <Flex
+            w={"90%"}
+            p="10px 20px"
+            justify="space-between"
+            m="10px 0px"
+            borderBottom={"1px solid gray"}
+          >
+            <Flex direction="column" textAlign={"left"}>
+              <Text>Foods Tabs</Text>
+              <Text fontSize={12} color="#ff763f">
+                Food
+              </Text>
             </Flex>
             <HStack>
               <Text>Artical Created 9 months ago</Text>
-              <ChatIcon color='#ff763f' />
+              <ChatIcon color="#ff763f" />
             </HStack>
           </Flex>
 
-          <Flex w={'90%'} p="10px 10px" justify="space-between" m='10px 0px' borderBottom={'1px solid gray'}>
-            <Flex direction='column' textAlign={'left'} >
-              <Text >Settings</Text>
-              <Text  fontSize={12} color='#ff763f'>Target Scheduler</Text>
+          <Flex
+            w={"90%"}
+            p="10px 10px"
+            justify="space-between"
+            m="10px 0px"
+            borderBottom={"1px solid gray"}
+          >
+            <Flex direction="column" textAlign={"left"}>
+              <Text>Settings</Text>
+              <Text fontSize={12} color="#ff763f">
+                Target Scheduler
+              </Text>
             </Flex>
             <HStack>
               <Text>Artical Created 10 months ago</Text>
-              <ChatIcon color='#ff763f' />
+              <ChatIcon color="#ff763f" />
             </HStack>
           </Flex>
-
         </Flex>
       </Box>
     </Box>
